@@ -22,7 +22,7 @@ describe('app', () => {
       .get('/')
       .expect(200);
 
-    expect(res.text).toMatch('Привет от Хекслета!');
+    expect(res.text).toMatch('Приветики от Хекслета!');
     expect(res.text).toMatch('Приложение запущено, но сообщение сервера не установлено!');
   });
 
@@ -33,7 +33,7 @@ describe('app', () => {
       .get('/')
       .expect(200);
 
-    expect(res.text).toMatch('Привет от Хекслета!');
+    expect(res.text).toMatch('Приветики от Хекслета!');
     expect(res.text).toMatch(`Приложение запущено и передает сообщение: ${process.env.SERVER_MESSAGE}`);
   });
 
